@@ -1,0 +1,24 @@
+{
+  "name": "drumstick",
+  "version": "0.0.1",
+  "description": "A library to ping an endpoint in recurring intervals",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brene/drumstick.git"
+  },
+  "keywords": [
+    "heartbeat",
+    "ping",
+    "interval"
+  ],
+  "author": "Rene Brandel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brene/drumstick/issues"
+  },
+  "homepage": "https://github.com/brene/drumstick#readme"
+}
