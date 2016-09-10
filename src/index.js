@@ -1,5 +1,5 @@
 import Interval from 'node-interval'
-import {fetchUrl} from 'fetch'
+import 'isomorphic-fetch'
 
 class drum {
 
@@ -37,21 +37,19 @@ class drum {
   }
 
   ping () {
-    fetchUrl(this.endpoint, {
+    fetch(this.endpoint, {
       method: 'POST',
-      payload: JSON.stringify(this.payload),
+      body: JSON.stringify(this.payload),
       headers: {
         'Content-Type': 'application/json'
       }
-    }, (error, body, meta) => {
-      if (error) {
-        console.log('Request failed', error)
-      } else {
-        if (this.debug) {
-          console.log('Request succeeded with JSON response', body)
-        }
-      }
     })
+      .then((data) => {
+        if (this.debug) [
+          console.log('Request succeeded with JSON response', body)
+        ]
+      })
+      .catch((error) => console.log(error))
   }
 }
 

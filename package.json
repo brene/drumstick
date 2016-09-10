@@ -1,6 +1,6 @@
 {
   "name": "drumstick",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library to ping an endpoint in recurring intervals",
   "main": "lib/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "babel-preset-es2015": "^6.14.0"
   },
   "dependencies": {
-    "fetch": "^1.1.0",
+    "isomorphic-fetch": "^2.2.1",
     "node-interval": "^0.1.1"
   }
 }
