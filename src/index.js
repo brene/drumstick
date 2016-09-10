@@ -5,10 +5,8 @@ class drum {
 
   start (config) {
     const defaults = {
-      endpoint: 'https://webtask.it.auth0.com/api/run/wt-renebrandel-outlook_com-0/hello?webtask_no_cache=1',
-      payload: {
-        message: 'hello from github.com/brene/drumstick',
-      },
+      endpoint: 'http://localhost',
+      payload: {},
       debug: false,
       frequency: 1000,
     }

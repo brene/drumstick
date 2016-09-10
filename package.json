@@ -1,6 +1,6 @@
 {
   "name": "drumstick",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to ping an endpoint in recurring intervals",
   "main": "lib/index.js",
   "scripts": {
