@@ -1,9 +1,11 @@
 {
   "name": "drumstick",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A library to ping an endpoint in recurring intervals",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "trial": "./node_modules/.bin/babel -d lib src/ && node lib/index.js",
+    "prepublish": "./node_modules/.bin/babel -d lib src/",
     "test": "test"
   },
   "repository": {
@@ -20,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/brene/drumstick/issues"
   },
-  "homepage": "https://github.com/brene/drumstick#readme"
+  "homepage": "https://github.com/brene/drumstick#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node-interval": "^0.1.1"
+  }
 }

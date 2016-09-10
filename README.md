@@ -17,12 +17,14 @@ drumstick.start({
   endpoint: 'http://localhost',
   payload: {},
   frequency: 1000,
+  debug: false,
 })
 ```
 ### Configuration
 * __endpoint__: the endpoint drumstick should send the payload
-* __payload__: the payload that should be sent to the endpoint
-* __frequency__: the frequency for the heartbeat in seconds
+* __payload__: the payload that should be sent to the endpoint (Will be stringified before sending)
+* __frequency__: the frequency for the heartbeat in milliseconds
+* __debug__: outputs the body of a succeeded request
 
 ### Functions
 There are also other functions that you can call to change the behavior of `drumstick` at runtime.
