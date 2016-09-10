@@ -46,7 +46,7 @@ class drum {
     })
       .then((data) => {
         if (this.debug) [
-          console.log('Request succeeded with JSON response', body)
+          console.log('Request succeeded with JSON response', data)
         ]
       })
       .catch((error) => console.log(error))
