@@ -4,7 +4,7 @@ drumstick let's you send a *heartbeat* to a custom endpoint in a fixed interval.
 ## Features
 * 🔁 heartbeat to a server in a fixed interval
 * 🖌 at run-time customizable payload
-* 🔑 bult-in authentication if needed
+* 🔑 built-in authentication if needed
 
 ## Installation
 `npm install --save drumstick`
