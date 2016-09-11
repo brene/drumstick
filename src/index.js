@@ -9,12 +9,15 @@ class drum {
       payload: {},
       debug: false,
       frequency: 1000,
+      method: 'POST',
     }
     const newconfig = Object.assign({}, defaults , config)
     this.payload = newconfig.payload
     this.endpoint = newconfig.endpoint
     this.debug = newconfig.debug
+    this.method = newconfig.method
     this.interval = new Interval(this.ping.bind(this), newconfig.frequency)
+    this.ping()
     this.interval.start()
   }
 
@@ -33,12 +36,13 @@ class drum {
   changeFrequency (frequency) {
     this.interval.stop()
     this.interval = new Interval(this.ping.bind(this), frequency)
+    this.ping()
     this.interval.start()
   }
 
   ping () {
     fetch(this.endpoint, {
-      method: 'POST',
+      method: this.method,
       body: JSON.stringify(this.payload),
       headers: {
         'Content-Type': 'application/json'

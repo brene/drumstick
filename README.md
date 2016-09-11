@@ -14,6 +14,7 @@ drumstick let's you send a *heartbeat* to a custom endpoint in a fixed interval.
 import drumstick from 'drumstick'
 
 drumstick.start({
+  method: 'POST',
   endpoint: 'http://localhost',
   payload: {},
   frequency: 1000,
@@ -21,6 +22,7 @@ drumstick.start({
 })
 ```
 ### Configuration
+* __method__: the type of HTTP request to send the server `POST | GET | HEAD | PUT | DELETE`
 * __endpoint__: the endpoint drumstick should send the payload
 * __payload__: the payload that should be sent to the endpoint (Will be stringified before sending)
 * __frequency__: the frequency for the heartbeat in milliseconds
