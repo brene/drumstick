@@ -1,10 +1,12 @@
-# drumstick[![npm version](https://badge.fury.io/js/drumstick.png)](https://badge.fury.io/js/drumstick)
+# drumstick 🎼[![npm version](https://badge.fury.io/js/drumstick.png)](https://badge.fury.io/js/drumstick)
 
 drumstick let's you send a *heartbeat* to a custom endpoint in a fixed interval.
 ## Features
 * 🔁 heartbeat to a server in a fixed interval
 * 🖌 at run-time customizable payload
-* 🔑 bult-in authentication if needed
+
+## Installation
+`npm install --save drumstick`
 
 ## Usage
 
@@ -30,11 +32,11 @@ drumstick.start({
 
 ### Functions
 There are also other functions that you can call to change the behavior of `drumstick` at runtime.
-#### `changePayload`
+#### `changePayload(payload)`
 Change the payload at anytime to any json object. It'll be stringified before sending to the endpoint.
-#### `changeFrequency`
+#### `changeFrequency(frequency)`
 Change the frequency of heartbeat.
-#### `pause`
+#### `pause()`
 Pauses the heartbeat.
-#### `resume`
+#### `resume()`
 Resumes the heartbeat after it has been paused.
