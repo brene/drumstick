@@ -1,4 +1,4 @@
-# drumstick[![npm version](https://badge.fury.io/js/drumstick.png)](https://badge.fury.io/js/drumstick)
+# drumstick 🎼[![npm version](https://badge.fury.io/js/drumstick.png)](https://badge.fury.io/js/drumstick)
 
 drumstick let's you send a *heartbeat* to a custom endpoint in a fixed interval.
 ## Features
