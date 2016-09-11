@@ -31,11 +31,11 @@ drumstick.start({
 
 ### Functions
 There are also other functions that you can call to change the behavior of `drumstick` at runtime.
-#### `changePayload`
+#### `changePayload(payload)`
 Change the payload at anytime to any json object. It'll be stringified before sending to the endpoint.
-#### `changeFrequency`
+#### `changeFrequency(frequency)`
 Change the frequency of heartbeat.
-#### `pause`
+#### `pause()`
 Pauses the heartbeat.
-#### `resume`
+#### `resume()`
 Resumes the heartbeat after it has been paused.
