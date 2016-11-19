@@ -6,7 +6,7 @@ class drum {
   start (config) {
     const defaults = {
       endpoint: 'http://localhost',
-      payload: {},
+      payload: () => {},
       debug: false,
       frequency: 1000,
       method: 'POST',
@@ -41,9 +41,12 @@ class drum {
   }
 
   ping () {
+
+    const body = typeof (this.payload) === 'function' ? this.payload() : this.payload;
+
     fetch(this.endpoint, {
       method: this.method,
-      body: JSON.stringify(this.payload),
+      body: JSON.stringify(body),
       headers: {
         'Content-Type': 'application/json'
       }
